@@ -1,0 +1,17 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Artiden\\Tz\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Artiden\\Tz\\Test\\": "tests/",
+            "PHPUnit\\Metadata\\": "vendor/phpunit/phpunit/src/Metadata",
+            "PHPUnit\\Metadata\\Annotation\\Parser\\": "vendor/phpunit/phpunit/src/Metadata/Parser/Annotation"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.3"
+    }
+}
