@@ -1,12 +1,12 @@
 {
     "autoload": {
         "psr-4": {
-            "Artiden\\Tz\\": "src/"
+            "Artiden\\footballCup\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Artiden\\Tz\\Test\\": "tests/",
+            "Artiden\\FootballCup\\Test\\": "tests/",
             "PHPUnit\\Metadata\\": "vendor/phpunit/phpunit/src/Metadata",
             "PHPUnit\\Metadata\\Annotation\\Parser\\": "vendor/phpunit/phpunit/src/Metadata/Parser/Annotation"
         }
