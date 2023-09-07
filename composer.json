@@ -1,7 +1,7 @@
 {
     "autoload": {
         "psr-4": {
-            "Artiden\\footballCup\\": "src/"
+            "Artiden\\FootballCup\\": "src/"
         }
     },
     "autoload-dev": {
