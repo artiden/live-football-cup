@@ -15,12 +15,23 @@ class Game
     protected PlayableTeam $homeTeam,
     protected PlayableTeam $awayTeam
   ) {
+    // In real world app we can use uuid for comparison here
     if ($this->homeTeam->name === $this->awayTeam->name) {
       throw new SameTeamException();
     }
 
     $this->active = false;
     $this->createdAt = new \DateTimeImmutable();
+  }
+
+  public function getHomeTeam(): PlayableTeam
+  {
+    return $this->homeTeam;
+  }
+
+  public function getAwayTeam(): PlayableTeam
+  {
+    return $this->awayTeam;
   }
 
   public function setScore(int $homeTeamScore, int $awayTeamScore): void {

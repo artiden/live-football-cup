@@ -5,7 +5,7 @@ namespace Artiden\FootballCup;
 use Artiden\FootballCup\exceptions\GameNotfound;
 use Artiden\FootballCup\interface\GameRepositoryInterface;
 
-class GameRepository implements GameRepositoryInterface {
+class ArrayGameRepository implements GameRepositoryInterface {
 
   /**
    * @param array $storage In real world application we should pass some storage here...

@@ -3,7 +3,7 @@
 namespace Artiden\FootballCup\Test;
 
 use Artiden\FootballCup\Game;
-use Artiden\FootballCup\GameRepository;
+use Artiden\FootballCup\ArrayGameRepository;
 use Artiden\FootballCup\HumanTeam;
 use PHPUnit\Framework\TestCase;
 
@@ -12,7 +12,7 @@ class GameRepositoryTest extends TestCase {
     $homeTeam = new HumanTeam('home');
     $awayTeam = new HumanTeam('away');
     $this->game = new Game($homeTeam, $awayTeam);
-    $this->repository = new GameRepository();
+    $this->repository = new ArrayGameRepository();
 
     parent::setUp();
   }
